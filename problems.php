@@ -312,6 +312,15 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
         echo "hogya na login ab kya jaan loge<br>";
     }
 }
+<?php
+// 50 ki jgh 20 le rha hu
+$str="this is a sample string ehose length is supposed to be greater then 20";
+$len=strlen($str);
+$strtitle=$str;
+if ($len>20) {
+    $strtitle=substr($str,0,20);
+}
+echo $strtitle; 
 ?>
 
 
